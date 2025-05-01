@@ -5,6 +5,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import os
 import calendar
 from bson import ObjectId
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Initialize Flask app
 app = Flask(__name__, static_folder='static', static_url_path='/static')
@@ -79,7 +82,7 @@ app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.secret_key = 'your_secret_key'
 
 # MongoDB Configuration
-app.config["MONGO_URI"] = "mongodb+srv://Zulmei:OiQVj32iu0@workouttrackercluster.7m2oj.mongodb.net/workout_tracker?retryWrites=true&w=majority&appName=WorkoutTrackerCluster"
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 mongo = PyMongo(app)
 
 

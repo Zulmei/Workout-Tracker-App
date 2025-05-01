@@ -10,3 +10,4 @@ automatic_scaling:
 
 env_variables:
   FLASK_ENV: "production"
+  MONGO_URI: "mongodb+srv://Zulmei:OiQVj32iu0@workouttrackercluster.7m2oj.mongodb.net/workout_tracker?retryWrites=true&w=majority&appName=WorkoutTrackerCluster"
