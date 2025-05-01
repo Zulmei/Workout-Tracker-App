@@ -20,8 +20,8 @@ It allows users to choose workout plans, record workout details, view history, a
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Zulmei/workout-app.git
-   cd workout-app
+   git clone https://github.com/Zulmei/Workout-Tracker-App.git
+   cd Workout-Tracker-App
 2. (Optional) Create and activate a virtual environment:
    ```bash
    python -m venv venv
